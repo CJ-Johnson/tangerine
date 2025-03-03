@@ -3,11 +3,19 @@
 
 #include "../include/tangerine.hpp"
 
-void Test() {
+void Test1() {
   assert(std::string_view("(12(X^2Y^3)^4)/(3X^3Y^2)") ==
          "(12(X^2Y^3)^4)/(3X^3Y^2)");
 
   assert(GetTrue());
 }
 
-int main() { Test(); }
+void Test2() {
+  assert(true);
+  assert(true);
+}
+
+int main() {
+  Test1();
+  Test2();
+}

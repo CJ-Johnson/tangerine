@@ -17,13 +17,13 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Print Working Directory
-      run: pwd
+      run: cd tangerine && pwd
 
     - name: Print dir contents
       run: ls -la
 
     - name: Navigate to build
-      run: cd ${{github.workspace}}/build
+      run: cd build
 
     - name: Run Cmake
       run: cmake ..

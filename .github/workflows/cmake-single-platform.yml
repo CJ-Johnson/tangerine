@@ -23,5 +23,5 @@ jobs:
       run: cd ./tangerine/build && make
 
     - name: Test
-      run: ctest
+      run: cd ./tangerine/build && ctest
 

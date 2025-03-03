@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: Move to code and Print Working Directory
-      run: cd tangerine && pwd
+      run: cd tangerine && cd tangerine && pwd
 
     - name: Print dir contents
       run: ls -la

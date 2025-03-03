@@ -16,11 +16,8 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Change to build dir
-      run: cd ./tangerine/build
-
     - name: Run Cmake
-      run: cmake .
+      run: cmake -S ./tangerine -B ./tangerine/build
 
     - name: Run Make
       run: make

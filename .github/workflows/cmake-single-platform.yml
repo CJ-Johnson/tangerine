@@ -20,7 +20,7 @@ jobs:
       run: cmake -S ./tangerine -B ./tangerine/build
 
     - name: Run Make
-      run: cd ./tangerine/tangerine/build && make
+      run: cd ./tangerine/build && make
 
     - name: Test
       run: ctest

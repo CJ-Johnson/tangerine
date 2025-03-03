@@ -16,11 +16,23 @@ jobs:
     steps:
     - uses: actions/checkout@v4
 
-    - name: Move to code and Print Working Directory
-      run: cd tangerine && cd tangerine && pwd
+    - name: Print Working Directory
+      run: pwd
 
     - name: Print dir contents
       run: ls -la
+
+    - name: Change directory
+      run: cd tangerine
+
+    - name: Print Working Directory
+      run: pwd
+
+    - name: Print dir contents
+      run: ls -la
+
+    - name: Change directory
+      run: cd tangerine
 
     - name: Navigate to build
       run: cd build

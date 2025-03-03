@@ -17,7 +17,7 @@ jobs:
     - uses: actions/checkout@v4
 
     - name: find
-      run: find / -type d -name 'build'
+      run: find ./ -type d -name 'build'
 
     - name: Change to build dir
       run: cd tangerine/tangerine/build
